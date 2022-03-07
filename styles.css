@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.5rem;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5;
+  color: hsl(232, 13%, 33%);
+}
+
+.container {
+  max-width: 144rem;
+  margin: 0 auto;
+  padding: 10rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  gap: 1rem;
+  color: hsl(232, 13%, 33%);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 5px 5px 3px hsla(236, 72%, 79%, 0.3);
+  padding: 3rem 10rem;
+  gap: 2rem;
+}
+
+.title {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+p {
+  border-bottom: 1px solid hsla(232, 13%, 33%, 0.411);
+  padding: 1.8rem;
+  width: 100%;
+  text-align: center;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.price {
+  font-size: 5rem;
+  letter-spacing: 1px;
+}
+
+span {
+  font-size: 2.5rem;
+  margin-right: 1rem;
+}
+
+.btn {
+  display: block;
+  border: none;
+  cursor: pointer;
+  padding: 1.8rem 3rem;
+  width: 100%;
+  margin-top: 2rem;
+  border-radius: 5px;
+  font-size: 1.7rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.btn__colored {
+  background-image: linear-gradient(
+    to right,
+    hsl(236, 72%, 79%),
+    hsl(237, 63%, 64%)
+  );
+  color: hsl(240, 78%, 98%);
+}
+
+.card__prof {
+  background-image: linear-gradient(
+    to bottom,
+    hsl(236, 72%, 79%),
+    hsl(237, 63%, 64%)
+  );
+  color: hsl(240, 78%, 98%);
+}
+
+.card__prof p {
+  border-bottom: 1px solid hsl(240, 78%, 98%);
+}
+
+.card__prof .btn.btn__white {
+  background-color: hsl(240, 78%, 98%);
+  color: hsl(237, 63%, 64%);
+}
